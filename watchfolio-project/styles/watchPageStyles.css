@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+    color: black;
+  }
+
+  body{
+    background-color: rgb(247, 241, 241);
+    height: 100vh;
+  }
+
+
+ h1{
+    font-size: 2.7rem;
+    justify-self: center;
+  }
+
+  .grid{
+    max-width: 100rem;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    padding: 0 2rem;
+  }
+
+  .price{
+    font-size: 2rem;
+    font-weight: bolder;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .graph{
+    grid-column: 1/-1;
+    height: 40rem;
+    margin-top: 10rem;
+  }
+
+  .flex{
+    display:flex;
+    justify-self: center;
+    gap: 2rem;
+
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  span{
+    font-size:1.7rem;
+  }
+
+  .green{
+    color:green;
+  }
+  .red{
+    color:red;
+  }
+
+  .widget{
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 255, 0.46);
+    color: white;
+  }
+
+  .orange-background-color{
+    background-color: rgba(255, 166, 0, 0.481);
+  }
+
+  .green-background-color{
+    background-color:rgba(0, 128, 0, 0.477)
+  }
+  .red-background-color{
+    background-color: rgb(228, 57, 57);
+  }
+
+  text{
+    font-size: 1.2rem;
+}
+
+img{
+    width: 7.7rem;
+
+}
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    max-width: 100rem;
+    height: 10rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.search-form{
+    position: relative;
+    height: 4rem;
+    width: 24rem;
+}
+
+.search-bar{
+    height: 4rem;
+    width: 100%;
+    border:none;
+    border-radius: 1.4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.list{
+  list-style-type: none;
+  background-color: white;
+  text-align: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+
+
+}
+
+b{
+  font-size: 1.2rem;
+}
+
+.list:hover{
+  background-color:rgb(234, 226, 226);
+}

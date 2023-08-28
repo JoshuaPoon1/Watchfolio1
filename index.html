@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    *********************************
+    Made by Joshua Poon :p
+    All source code can be found on
+    https://github.com/JoshuaPoon1/Watchfolio.app
+
+    *********************************
+  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap");
+    </style>
+    <link rel="icon" href="./watchfolio-project/images/Wlogo.png" />
+    <link rel="stylesheet" href="./watchfolio-project/styles/styles.css" />
+    <link rel="stylesheet" href="./watchfolio-project/styles/additionalStyles.css" />
+    <link rel="stylesheet" href="./watchfolio-project/styles/media.css" />
+    <script type="module" src="./watchfolio-project/watches.js" defer></script>
+    <script type="module" src="./watchfolio-project/app.js" defer></script>
+    <script type="module" src="./watchfolio-project/script.js" defer></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script type="module" src="./watchfolio-project/LPgraph.js" defer></script>
+
+
+    <title>Watchfolio</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header class="header">
+        <div class="header-info">
+          <div class="header-text">
+            Watches Tracked: <a href="#" class="wf-link wt">13</a>
+          </div>
+          <div class="header-text">
+            Exchanges Tracked: <a href="#" class="wf-link et">2</a>
+          </div>
+          <div class="header-text">
+           <a href="how.html" class="wf-link">How It Works</a>
+          </div>
+          
+        </div>
+
+        <div class="flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="moon-svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          />
+        </svg>
+       </div>
+      </header>
+    </div>
+    <div class="header-wrapper">
+      <header class="header height-7rem">
+        <img src="./watchfolio-project/images/Wlogo.png" class="logo" />
+      
+      <form class="search-form">
+        <input
+          type="text"
+          placeholder="&#x1F50E; Search Watch"
+          class="search-bar"
+        >
+        <ul class="autosuggestion-list">
+          <!--
+          <li class="list">html</li>
+          -->
+        </ul>
+      </form>
+      
+        <div class="buttons">
+          <button class="btn sign-up">Sign Up</button>
+          <button class="btn log-in">Log In</button>
+        </div>
+      </header>
+    </div>
+    <section>
+      <div class="grid">
+        <div class="parent-slider trending">
+          <div class="title-style">
+            <h1 class="slider-title">🔥 Trending</h1>
+            <a href="#" class="more"> <!--More &rarr;--></a>
+          </div>
+          <div class="slider trending" style="transform: translateX(0%)">
+            <ol>
+              <li>Audemars Piguet Royal Oak</li>
+              <li>Rolex GMT-Master II</li>
+              <li>Rolex Daytona</li>
+            </ol>
+          </div>
+          <div class="slider trending" style="transform: translateX(100%)">
+            <ol start="4">
+              <li>Rolex Submariner</li>
+              <li>Omega Seamaster</li>
+              <li>TAG Heuer Carrera</li>
+            </ol>
+          </div>
+          <div class="slider trending" style="transform: translateX(200%)">
+            <ol start="7">
+              <li>Omega Speedmaster</li>
+              <li>Rolex Datejust</li>
+              <li>Breitling Navitimer</li>
+            </ol>
+          </div>
+
+          <div class="dots">
+            <div class="dot active trending" data-slide="0"></div>
+            <div class="dot trending" data-slide="1"></div>
+            <div class="dot trending" data-slide="2"></div>
+          </div>
+        </div>
+        <div class="parent-slider">
+          <div class="title-style">
+            <div class="center-text">
+              <img src="./watchfolio-project/images/GainnerIcon.png" class="icon" />
+              <h1 class="slider-title">Biggest Gainers</h1>
+            </div>
+            <a href="#" class="more"> <!-- More &rarr;--></a>
+          </div>
+
+          <div class="slider gainers" style="transform: translateX(0%)">
+            <ol>
+              <li>Audemars Piguet Royal Oak</li>
+              <li>Rolex GMT-Master II</li>
+              <li>Rolex Daytona</li>
+            </ol>
+          </div>
+          <div class="slider gainers" style="transform: translateX(100%)">
+            <ol start="4">
+              <li>Rolex Submariner</li>
+              <li>Omega Seamaster</li>
+              <li>TAG Heuer Carrera</li>
+            </ol>
+          </div>
+          <div class="slider gainers" style="transform: translateX(200%)">
+            <ol start="7">
+              <li>Omega Speedmaster</li>
+              <li>Rolex Datejust</li>
+              <li>Breitling Navitimer</li>
+            </ol>
+          </div>
+          <div class="dots">
+            <div class="dot gainer active" data-slide="0"></div>
+            <div class="dot gainer" data-slide="1"></div>
+            <div class="dot gainer" data-slide="2"></div>
+          </div>
+        </div>
+        <div class="parent-slider">
+          <div class="title-style">
+            <div class="center-text">
+              <img src="./watchfolio-project/images/AddIcon.png" class="icon" />
+              <h1 class="slider-title">Recent news</h1>
+            </div>
+            <a href="#" class="more"> To Blog &rarr;</a>
+          </div>
+          <div class="slider recents" style="transform: translateX(0%)">
+            <ul class= "news">
+              <li class= "news"><a href = "https://www.hodinkee.com/articles/the-rolex-milgauss-is-now-discontinued" target="_blank" class="news-link">Milguass Discontinued</a></li>
+              <li class="news"><a href = "https://www.oris.ch/en/kermit" target = "_blank" class="news-link">Kermit Oris</a></li>
+              <li class="news"><a href="https://www.hodinkee.com/articles/rolex-day-dates-with-stone-dials-inspirational-words-and-emojis" target="_blank" class="news-link">New Rolex Daydate</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="filters">
+        <p class="sort">Sort By:</p>
+        <form>
+          <select class="select-filter">
+            <option value="price">Price</option>
+            <option value="biggestGainers">Biggest Gainers (yr)</option>
+            <option value="biggestLosers">Biggest Losers</option>
+            <option value="rolex">Brand: Rolex</option>
+            <option value="omega">Brand: Omega</option>
+          </select>
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Ref #</th>
+            <th>Production Date</th>
+            <th>Price</th>
+            <th>7d%</th>
+            <th>30d%</th>
+            <th>1yr%</th>
+            <th>Last 30 days</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--====== HTML INJECTION======
+          <tr>
+            <td>1</td>
+            <td>Product A</td>
+            <td>2022-03-15</td>
+            <td>$10.99</td>
+            <td>+3%</td>
+            <td>+10%</td>
+            <td>+50%</td>
+            <td>$300</td>
+          </tr>-->
+        </tbody>
+      </table>
+
+    </section>
+
+
+    <div class="overlay-blur hidden"></div>
+    <div class="watches-tracked module hidden">
+      <h1>Watchfolio tracks 5 brands and 22 models as of now.</h1>
+      <p>
+        Those include
+        <ul>
+          <li>Rolex</li>
+          <li>Patek Philippe</li>
+          <li>AP</li>
+          <li>Omega</li>
+          <li>Cartier</li>
+        </ul> 
+      </p>
+      <i>We plan to add more models on a bi-daily basis.</i>
+    </div>
+    <div class="exh-tracked hidden module">
+      <h1>We track 2 exchanges as of now.</h1>
+      <p>
+        Those include <a href="https://www.chrono24.com/" target="_blank">chrono24</a>
+         and <a href="https://www.ebay.com" target="_blank">eBay</a>
+      </p>
+      <i>We are working hard to add more exchange support.</i>
+    </div>
+
+    </div>
+    <div class="welcome module hidden">
+      <h1>Welcome</h1>
+      <p>Join the 1000+ others who are having a leg up in the watch market.</p>
+      <form class= "form-grid">
+        <!--grid four ways-->
+        <div>
+        <label for="email">Email</label>
+        <input id = "email" type="email" placeholder="me@example.com" required>
+        </div>
+        <div>
+          <label for="pass">Password</label>
+          <input id = "pass" type="password" required>
+        </div>
+        <div>
+          <label for="pass">Confirm Password</label>
+          <input id = "pass" type="password" required>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <div class="module login hidden">
+      <h1>Welcome Back</h1>
+      <form class= "form-grid">
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="me@example.com" required>
+        </div>
+        <div>
+          <label for="pass">Password</label>
+          <input id = "pass" type="password" required>
+        </div>
+        <div>
+          <button>Submit</button>
+      </form>
+
+
+
+
+    </div>
+
+  </body>
+</html>

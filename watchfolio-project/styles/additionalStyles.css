@@ -1,0 +1,19 @@
+.background-color-black {
+  background-color: rgb(55, 2, 46);
+}
+.color-white {
+  color: white;
+}
+.color-grey
+{
+  color:grey;
+}.color-green {
+  color: rgb(120, 223, 120);
+}
+.bkgrnd-prpl {
+  background-color: rgb(92, 44, 168);
+}
+.guide.borders-top-bot {
+  border-top: 1px solid rgba(255, 255, 255, 0.345);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.345);
+}

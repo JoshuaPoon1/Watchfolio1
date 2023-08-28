@@ -1,0 +1,22 @@
+@media (max-width: 1100px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .trending {
+      display:none;
+    }
+    .welcome.module{
+      width: 60rem;
+      height: 40rem;
+    }
+    .module.welcome h1 {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      color: white;
+    }
+    .form-grid{
+
+      margin-top: 4rem;
+    }
+  }

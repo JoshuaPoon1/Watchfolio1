@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-size: 62.5%;
+
+            font-family: 'Handjet', cursive;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body{
+            background-color: rgb(236, 222, 255);
+            color:rgb(27, 12, 68);
+
+        }
+
+        .hiw{
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 4rem;
+        }
+
+        .disc{
+           
+            max-width: 75rem;
+            margin: 0 auto;
+            margin-top: 3rem;
+            font-size: 1.5rem;
+        }
+        a{
+            font-size: 1.5rem;
+        }
+
+        .wavy {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: radial-gradient(circle, rgb(180, 142, 233) 0.9px, rgb(140, 227, 161) 0.9px);
+            background-size: 20px 20px;
+        }
+
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <h1 class="hiw"> How it Works</h1>
+
+    <div class="disc">Watchfolio.app is a project made by Joshua Poon, and it aims to combine webscraping with
+        data visualization to provide users with insights into the price trends of watches sourced 
+        from eBay and Chrono24. By leveraging Selenium for web scraping, Watchfolio.app collects real-time 
+        pricing data from these platforms. This data is then uploaded to a CSV file stored on GitHub,
+        <a href="https://github.com/JoshuaPoon1/Watchfolio.app" target="_blank" >Found Here</a>, ensuring 
+        accessibility and version control.
+    </div>
+    <div class="disc">
+        The integration of D3.js, a powerful JavaScript library for data visualization, empowers Watchfolio.app
+         to convert the raw github pricing data into interactive and informative graphs. Users can explore price fluctuations, 
+         identify trends, and make informed decisions about watch investments. With a user-friendly interface, 
+         Watchfolio.app offers an intuitive experience, enabling enthusiasts and collectors to stay updated on 
+         the evolving watch market landscape.
+    </div>
+
+    <div class="disc">
+        I am in the process of making a watchfolio api. This project should be done by Q1 2024. Thank you for viewing
+        my project! ^_^
+    </div>
+    
+
+
+    <div class="wavy"></div>
+</body>
+</html>
