@@ -22,6 +22,7 @@
     <script type="module" src="./watchfolio-project/watches.js" defer></script>
     <script type="module" src="./watchfolio-project/app.js" defer></script>
     <script type="module" src="./watchfolio-project/script.js" defer></script>
+    <script type="module" src="./watchfolio-project/darkmode.js" defer></script>
     <script src="https://d3js.org/d3.v4.js"></script>
     <script type="module" src="./watchfolio-project/LPgraph.js" defer></script>
 
@@ -44,7 +45,9 @@
           
         </div>
 
+        <!--
         <div class="flex">
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -60,6 +63,7 @@
           />
         </svg>
        </div>
+       -->
       </header>
     </div>
     <div class="header-wrapper">
@@ -162,7 +166,7 @@
               <img src="./watchfolio-project/images/AddIcon.png" class="icon" />
               <h1 class="slider-title">Recent news</h1>
             </div>
-            <a href="#" class="more"> To Blog &rarr;</a>
+            <a href="#" class="more"> <!--To Blog &rarr;--></a>
           </div>
           <div class="slider recents" style="transform: translateX(0%)">
             <ul class= "news">
@@ -174,7 +178,7 @@
         </div>
       </div>
       <div class="filters">
-        <p class="sort">Sort By:</p>
+        <p class="sort" id="sort">Sort By:</p>
         <form>
           <select class="select-filter">
             <option value="price">Price</option>
@@ -244,7 +248,7 @@
     </div>
     <div class="welcome module hidden">
       <h1>Welcome</h1>
-      <p>Join the 1000+ others who are having a leg up in the watch market.</p>
+      <p>Join the 100+ others who are having a leg up in the watch market.</p>
       <form class= "form-grid">
         <!--grid four ways-->
         <div>
